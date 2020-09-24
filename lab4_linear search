@@ -1,0 +1,27 @@
+#performing linear seacrch
+
+def linsearch(b, key):
+
+    for i in range(len(b)):    #lenght of the list
+        if b[i] == key:        #comapring the elements in list with key value
+            return i
+
+
+
+b =[1,2,3,4,5,6,7]
+b = [int(x) for x in b]
+key =2
+
+index = linsearch(b, key)      #calling the function at here
+print(key,"was found at index",index)
+print("if the index printed as none means the list dosent contains given value")
+
+
+
+
+
+C:\Users\Administrator\anaconda3\envs\pythonProject3\python.exe C:/Users/Administrator/PycharmProjects/pythonProject3/zxzx.py
+2 was found at index 1
+if the index printed as none means the list dosent contains given value
+
+Process finished with exit code 0
