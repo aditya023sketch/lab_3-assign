@@ -1,0 +1,28 @@
+#taking input from use and searching for key value in array
+
+def linsearch(b, key):
+
+    for i in range(len(b)):
+        if b[i] == key:
+            return i
+
+
+
+b =input('Enter the list of numbers: ')
+b=b.split()
+b = [int(x) for x in b]
+key =int(input("enter number for search:"))
+
+index = linsearch(b, key)
+print(key,"was found at index",index)
+print("if the index is not printed means the element not found")
+
+
+C:\Users\Administrator\anaconda3\envs\pythonProject3\python.exe C:/Users/Administrator/PycharmProjects/pythonProject3/zxzx.py
+Enter the list of numbers: 1 2 3 4 5 7
+enter number for search:4
+4 was found at index 3
+if the index is not printed means the element not found
+
+Process finished with exit code 0
+
