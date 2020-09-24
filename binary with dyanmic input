@@ -1,0 +1,48 @@
+#taking input from user and doing bianry search
+
+def binsearc(b, key):
+
+    start = 0
+    end = len(b)
+    while start < end:
+        mid = (start + end) // 2
+        if b[mid] > key:
+            end = mid
+        elif b[mid] < key:
+            start = mid + 1
+        else:
+            return mid
+
+
+b = input('Enter the sorted list of numbers: ')
+b=b.split()
+b=[int(x) for x in b]
+key = int(input('The number to search for: '))
+
+index = binsearc(b, key)
+print("b was found at index",index)
+print("if the index is printed as none then value not found")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+C:\Users\Administrator\anaconda3\envs\pythonProject3\python.exe C:/Users/Administrator/PycharmProjects/pythonProject3/bnnn.py
+Enter the sorted list of numbers: 1 2 3 4
+The number to search for: 2
+b was found at index 1
+if the index is printed as none then value not found
+
+Process finished with exit code 0
