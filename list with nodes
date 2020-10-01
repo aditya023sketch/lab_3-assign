@@ -1,0 +1,45 @@
+#list with nodes
+class Node:
+
+
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+
+class LinkedList:
+
+
+    def __init__(self):
+        self.head = None
+
+
+    def printList(self):
+        temp = self.head
+        while (temp):
+            print(temp.data)
+            temp = temp.next
+
+
+
+
+llist = LinkedList()
+llist.head = Node(10)
+second = Node(11)
+third = Node(12)
+
+llist.head.next = second
+second.next = third  
+
+llist.printList()
+    
+    
+    
+    
+    C:\Users\Administrator\anaconda3\envs\pythonProject3\python.exe C:/Users/Administrator/PycharmProjects/pythonProject3/vbv.py
+
+10
+11
+12
+
+Process finished with exit code 0
