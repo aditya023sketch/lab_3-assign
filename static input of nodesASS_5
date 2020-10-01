@@ -1,0 +1,44 @@
+#taking nodes through user in linked list
+class Node:
+
+
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+
+class LinkedList:
+
+
+    def __init__(self):
+        self.head = None
+
+
+    def printList(self):
+        temp = self.head
+        while (temp):
+            print(temp.data)
+            temp = temp.next
+
+
+llist = LinkedList()
+l1=input()
+l2=input()
+l3=input()
+
+llist.head = Node(l1)
+second = Node(l2)
+third = Node(l3)
+
+llist.head.next = second    #first was assigned as second
+second.next = third         #second was assigned as third
+
+llist.printList()
+
+
+C:\Users\Administrator\anaconda3\envs\pythonProject3\python.exe C:/Users/Administrator/PycharmProjects/pythonProject3/vbv.py
+12
+13
+14
+
+Process finished with exit code 0
